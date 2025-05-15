@@ -3,6 +3,8 @@
 ## Description
 This project recreates the famous data visualization of [Charles Minard's *Napoleon's disastrous Russian campaign of 1812*](https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png). I used `pandas` and `sqlite3` to build the database, and utilized `matplotlib` and `basemap` for both the proof of concept and the final result. 
 
+![minard_cloond](minard_clone.png) 
+
 ## How to run
 - Install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main).
 
@@ -27,5 +29,3 @@ python create_minard_db.py
 ```shell
 python plot_with_basemap.py
 ``` 
-
-![minard_cloond](minard_clone.png)

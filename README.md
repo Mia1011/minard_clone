@@ -1,18 +1,26 @@
-# 練習專案二：拿破崙征俄戰爭
+# Napoleon's disastrous Russian campaign of 1812
 
-## 簡介
-這個專案復刻了名聞遐邇的 [Charles Minard's Napoleon's disastrous Russian campaign of 1812](https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png) 資料視覺化，我們使用了 `pandas` 與 `sqlite3` 建立了資料庫，利用 `matplotlib` 與 `basemap` 進行概念驗證並做出成品。
+## Description
+This project recreated the data visualization of [Charles Minard's Napoleon's disastrous Russian campaign of 1812](https://en.wikipedia.org/wiki/Charles_Joseph_Minard#/media/File:Minard.png). I used `pandas` and `sqlite3` to build the database, and utilized `matplotlib` and `basemap` to conduct the POC and final result。
 
-## 如何重現
-- 安裝 [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main)
-- 依據 `environment.yml` 建立環境
-
+## How to run
+- Install [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main). 
+- Download the project files and ensure that `minard.txt` is placed in the `data/` folder within your working directory.
+- Set up the environment: 
 ```shell
 conda env create -f environment.yml
 ```
-
-- 將 `data/` 資料夾中的 `minard.txt` 置放於工作目錄中的 `data/` 資料夾
-- 啟動環境並執行 `python create_minard_db.py` 就能在 `data/` 資料夾中建立 `minard.db`
-- 啟動環境並執行 `python plot_with_basemap.py` 就能生成 `minard_clone.png`
+- Activate the environment:
+```shell
+conda activate <your_env_name>
+```
+- Build the database `minard.db` in the `data/` folder:
+```shell
+python create_minard_db.py
+```
+- Finally, generate the visualization `minard_clone.png`:
+```shell
+python plot_with_basemap.py
+``` 
 
 ![minard_cloond](minard_clone.png)
